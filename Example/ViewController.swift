@@ -21,7 +21,6 @@ class ViewController: UIViewController
         super.viewDidLoad()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("setDeviceToken"), name: NSUserDefaultsDidChangeNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("setPushText"), name: NSUserDefaultsDidChangeNotification, object: nil)
         
         let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: "testCopy:")
         deviceTokenLabel.addGestureRecognizer(longPressRecognizer)
@@ -35,14 +34,12 @@ class ViewController: UIViewController
         } else {
             deviceTokenLabel.text = "Ошибка генерации DeviceToken"
         }
-    }
-    
-    func setPushText()
-    {
+        
         if let pushText = userDefaults.valueForKey("PushText") {
             pushTextField.text = pushText as! String
         }
     }
+
     
     func testCopy(sender: UILongPressGestureRecognizer)
     {
