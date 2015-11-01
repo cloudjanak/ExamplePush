@@ -14,6 +14,7 @@
 		BA452B7B1BE4D3C300FE81D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA452B791BE4D3C300FE81D2 /* LaunchScreen.storyboard */; };
 		BA452B861BE4D3C300FE81D2 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA452B851BE4D3C300FE81D2 /* ExampleTests.swift */; };
 		BA452B911BE4D3C300FE81D2 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA452B901BE4D3C300FE81D2 /* ExampleUITests.swift */; };
+		BAB868251BE6D46700EA62CD /* Example 1.0 (3).ipa in Resources */ = {isa = PBXBuildFile; fileRef = BAB868241BE6D46700EA62CD /* Example 1.0 (3).ipa */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BA452B8C1BE4D3C300FE81D2 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA452B901BE4D3C300FE81D2 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		BA452B921BE4D3C300FE81D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB868241BE6D46700EA62CD /* Example 1.0 (3).ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Example 1.0 (3).ipa"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				BA452B771BE4D3C300FE81D2 /* Assets.xcassets */,
 				BA452B791BE4D3C300FE81D2 /* LaunchScreen.storyboard */,
 				BA452B7C1BE4D3C300FE81D2 /* Info.plist */,
+				BAB868231BE6D46700EA62CD /* Build (ipa) */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -123,6 +126,14 @@
 				BA452B921BE4D3C300FE81D2 /* Info.plist */,
 			);
 			path = ExampleUITests;
+			sourceTree = "<group>";
+		};
+		BAB868231BE6D46700EA62CD /* Build (ipa) */ = {
+			isa = PBXGroup;
+			children = (
+				BAB868241BE6D46700EA62CD /* Example 1.0 (3).ipa */,
+			);
+			path = "Build (ipa)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 			files = (
 				BA452B7B1BE4D3C300FE81D2 /* LaunchScreen.storyboard in Resources */,
 				BA452B781BE4D3C300FE81D2 /* Assets.xcassets in Resources */,
+				BAB868251BE6D46700EA62CD /* Example 1.0 (3).ipa in Resources */,
 				BA452B761BE4D3C300FE81D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
