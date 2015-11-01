@@ -46,7 +46,7 @@
                                     <constraint firstAttribute="height" constant="20" id="8X4-sT-YBg"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дайте секундочку, генерирую DeviceToken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mty-s4-cea">
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дайте секундочку, генерирую DeviceToken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mty-s4-cea">
                                 <rect key="frame" x="26" y="157" width="323" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,13 +57,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TFf-BY-Rsw">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TFf-BY-Rsw">
                                 <rect key="frame" x="26" y="270" width="323" height="377"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DeviceToken  ---  скопирован в буфер обмена" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqd-54-2Rb">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="98h-qV-iyc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.1529411765" green="0.50588235290000005" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -82,12 +93,16 @@
                             <constraint firstItem="agW-QB-qOW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="SgS-am-Ng4"/>
                             <constraint firstItem="XQ1-Gj-Unq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="T1e-oh-nhI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TFf-BY-Rsw" secondAttribute="bottom" constant="20" id="Tm9-pc-KQo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iqd-54-2Rb" secondAttribute="trailing" constant="-20" id="UNC-Ag-m2m"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iqd-54-2Rb" secondAttribute="bottom" id="X5F-zF-y2v"/>
                             <constraint firstItem="rqk-Qh-17R" firstAttribute="top" secondItem="mty-s4-cea" secondAttribute="bottom" constant="50" id="bgi-GY-fg6"/>
                             <constraint firstItem="rqk-Qh-17R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="nYz-BB-vZl"/>
+                            <constraint firstItem="iqd-54-2Rb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="q5g-Ia-8gs"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="copyDeviceTokenView" destination="iqd-54-2Rb" id="xQT-wn-Aaw"/>
                         <outlet property="deviceTokenLabel" destination="mty-s4-cea" id="LsF-kM-cyU"/>
                         <outlet property="pushTextField" destination="TFf-BY-Rsw" id="tFT-nG-YWb"/>
                     </connections>
