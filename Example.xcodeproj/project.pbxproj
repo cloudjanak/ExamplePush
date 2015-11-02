@@ -49,8 +49,8 @@
 		BA452B901BE4D3C300FE81D2 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		BA452B921BE4D3C300FE81D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAB868241BE6D46700EA62CD /* Example 1.0 (3).ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Example 1.0 (3).ipa"; sourceTree = "<group>"; };
-		BAB868271BE757BC00EA62CD /* Example 1.0 (4).ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Example 1.0 (4).ipa"; sourceTree = "<group>"; };
-		BAB868281BE7585500EA62CD /* Example 1.0 (5).ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Example 1.0 (5).ipa"; sourceTree = "<group>"; };
+		BAB8682B1BE76B6F00EA62CD /* Example 1.0 (4.1).ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Example 1.0 (4.1).ipa"; sourceTree = "<group>"; };
+		BAB8682C1BE76B6F00EA62CD /* Example 1.0 (5.1).ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Example 1.0 (5.1).ipa"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				BAB868241BE6D46700EA62CD /* Example 1.0 (3).ipa */,
-				BAB868271BE757BC00EA62CD /* Example 1.0 (4).ipa */,
-				BAB868281BE7585500EA62CD /* Example 1.0 (5).ipa */,
+				BAB8682B1BE76B6F00EA62CD /* Example 1.0 (4.1).ipa */,
+				BAB8682C1BE76B6F00EA62CD /* Example 1.0 (5.1).ipa */,
 			);
 			path = "Build (ipa)";
 			sourceTree = "<group>";
